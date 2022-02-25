@@ -275,25 +275,43 @@ nav ul li a:hover {
 #project {
   padding: 5em 20em;
 }
+.box .imgProject{
+  /* height:min-content; */
+  width:95%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
 .box {
   justify-content: center;
   text-align: center;
   /* width: 100%; */
   margin: 40px;
-  padding: 40px;
-  height: 40vh;
-  background-color: darkgrey;
+  /* padding: 30px; */
+  height: 50vh;
+  background-color:transparent;
+  box-shadow:0px 1px 3px black;
   box-sizing: border-box;
+  border-radius: 20px;
 }
-
+.Tag{
+  padding: 10px;
+  display: flex;
+  font-size: 4rem;
+}
 .box h2 {
   text-transform: uppercase;
-  margin: 1em 0;
+  margin: 1em ;
   font-size: 1.3rem;
 }
 
 .box p {
-  margin: 1rem;
+  display: flex;
+  justify-content:start;
+  text-align: center;
+  /* margin: 1rem; */
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -314,7 +332,7 @@ nav ul li a:hover {
   display: flex;
   text-align: center;
   padding: 10px 20px;
-  margin: 80px 10px;
+  margin:20px 50px;
   justify-content: start;
   box-sizing: border-box;
   background-color: whitesmoke;
