@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav>
         <div className="logo">
-          <h4>Simone</h4>
+          <h4>Za</h4>
         </div>
         <ul >
           <li><a href=""></a></li>
