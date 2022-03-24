@@ -12,15 +12,14 @@ export default function Navbar() {
           <h4>Za</h4>
         </div>
         <ul >
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href=""></a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href=""></a></li>
-          <li><a href=""><MdFacebook/></a></li>
-          <li><a href="" ><AiOutlineTwitter/></a></li>
-          <li><a href=""><BsLinkedin/></a></li>
+          <li><a href="https://www.facebook.com/hadiza21/" target="_blank" ><MdFacebook/></a></li>
+          <li><a href="https://twitter.com/hadizazz" target="_blank" ><AiOutlineTwitter/></a></li>
+          <li><a href="https://www.linkedin.com/in/hadiza-cahya-firdaus-50b288184/"target="_blank" ><BsLinkedin/></a></li>
         </ul>
 
         <div class="menu-toggle">

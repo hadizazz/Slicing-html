@@ -22,17 +22,15 @@ const Footer = () => {
           </div>
           <div className="columnFooter col-3">
             <div className="titleFooter">Menu</div>
-            <p className="linkFooter text-uppercase  text-start">Home</p>
-            <p className="linkFooter text-uppercase  text-start">About</p>
-            <p className="linkFooter text-uppercase  text-start">Project</p>
-            <p className="linkFooter text-uppercase  text-start">Contact</p>
+            <a href="#home" className="linkFooter text-uppercase  text-start">Home</a>
+            <a href="#about" className="linkFooter text-uppercase  text-start">About</a>
+            <a href="#experience" className="linkFooter text-uppercase  text-start">Project</a>
+            <a href="#contact" className="linkFooter text-uppercase  text-start">Contact</a>
 
           </div>
           <div className="columnFooter col-3">
-            <div className="titleFooter">Subscribe</div>
-            <p className="linkFooter text-uppercase  text-start">Subscribe to our newsletter and we will inform you about newset projects and promotions</p>
-        
-
+            {/* <div className="titleFooter">Subscribe</div> */}
+            {/* <p className="linkFooter text-uppercase  text-start">Subscribe to our newsletter and we will inform you about newset projects and promotions</p> */}
           </div>
         </div>
       
@@ -40,8 +38,8 @@ const Footer = () => {
       <div className="line"></div>
       <div className="wrapperFooter">
         <div className="columnFooter">
-            <div className="textFooter">@ DIZA.2021</div>
-            <p className="textFooter">All Rights Resevered</p>
+            <div className="textFooter">@ DIZA.2022</div>
+            <p className="textFooter">Designed & Developed by Hadiza Cahya Firdaus</p>
         </div>
       </div>
     </div>

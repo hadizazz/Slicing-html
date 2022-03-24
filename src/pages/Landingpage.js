@@ -3,67 +3,84 @@ import Navbar from "../components/Navbar";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Footer from "../components/Footer";
 import kolektive from "../images/kolektive.png";
+import lostandfound from "../images/lostandfound.png";
+import cuciin from "../images/cuciin.png";
 import { FaTag } from "react-icons/fa";
 import image from "../images/personal.jpg";
+import pp from '../images/diza.jpg';
 import react from "../images/react.png";
-import figma from "../images/figma.png"
-import css from "../images/css.png"
-import js from "../images/js.png"
+import figma from "../images/figma.png";
+import css from "../images/css.png";
+import js from "../images/js.png";
 
 export default function landingpage() {
+  const kolektiveClick = () => {
+    window.open("https://kolektive.netlify.app/");
+  };
   return (
     <div className="body">
       <Navbar />
-      <div className="heroLP">
-        <div className="boxHeading">
-          <p>Frontend Developer</p>
-          <span>Hello,</span>
-          <h1>i'm Hadiza Cahya Firdaus.</h1>
+      <section id="home">
+        <div className="heroLP">
+          <div className="boxHeading">
+            <p>Frontend Developer</p>
+            <span>Hello,</span>
+            <h1>i'm Hadiza Cahya Firdaus.</h1>
+          </div>
+          <div className="boxHeading">
+            <img src={pp}/>
         </div>
-      </div>
-      <div className="about">
-        <div className="layer">
-          <h1>ABOUT</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-            iure dolore deserunt repudiandae nostrum repellat, quos tempore
-            assumenda, eos voluptatibus alias numquam, sit Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Pariatur iure dolore deserunt
-            repudiandae nostrum repellat, quos tempore assumenda, eos
-            voluptatibus alias numquam, sit
-          </p>
+          </div>
+      </section>
+
+      <section id="about">
+        <div className="about">
+          <div className="layer">
+            <h1>ABOUT</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+              iure dolore deserunt repudiandae nostrum repellat, quos tempore
+              assumenda, eos voluptatibus alias numquam, sit Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Pariatur iure dolore
+              deserunt repudiandae nostrum repellat, quos tempore assumenda, eos
+              voluptatibus alias numquam, sit
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
       <section id="experience">
         <div className="exp">
-          <h3>Experience</h3>
+          <h3>Tools Experience</h3>
           <div className="boxTools">
             <div className="tools">
-              <img src={react} title="React JS"/>
+              <img src={react} title="React JS" />
             </div>
-            <div className="tools"><img src={figma} title="Figma"/></div>
-            <div className="tools"><img src={css} title="CSS"/></div>
-            <div className="tools"><img src={js} title="Javascript"/></div>
-
-
+            <div className="tools">
+              <img src={figma} title="Figma" />
+            </div>
+            <div className="tools">
+              <img src={css} title="CSS" />
+            </div>
+            <div className="tools">
+              <img src={js} title="Javascript" />
+            </div>
           </div>
-          
         </div>
-        
       </section>
 
       <section id="project">
-        <h1 class="title">Project</h1>
+        <h1 class="title">My Project</h1>
         <div class="content">
           <div class="box ">
-            <img src={kolektive} className="imgProject" />
-            <h1>Kolektive</h1>
+            <img src={cuciin} className="imgProject" />
+            <h1>Cuciin</h1>
             <div className="Tag">
               <FaTag />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Pariatur iure dolore deserunt repudiandae nostrum repellat,
+                Aplikasi website mengenai jasa laundry online untuk mempermudah
+                masyarakat dalam melaksanakan laundry tanpa harus ribet dan
+                mengeluarkan banyak waktu serta tenaga.
               </p>
             </div>
             <button>
@@ -79,11 +96,13 @@ export default function landingpage() {
             <div className="Tag">
               <FaTag />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Pariatur iure dolore deserunt repudiandae nostrum repellat,
+                Kolektive merupakan platform untuk membantu event-event yang
+                sedang berlangsung dengan mengadakan open donation atau campaign
+                bagi yang ingin membantu melancarkan sebuah event-event dengan
+                cara berdonasi.
               </p>
             </div>
-            <button>
+            <button type="button" onClick={kolektiveClick}>
               See Project{" "}
               <span>
                 <AiOutlineArrowRight />
@@ -91,13 +110,14 @@ export default function landingpage() {
             </button>
           </div>
           <div class="box ">
-            <img src={image} className="imgProject" />
-            <h1>Lorem</h1>
+            <img src={lostandfound} className="imgProject" />
+            <h1>Lost And Found</h1>
             <div className="Tag">
               <FaTag />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Pariatur iure dolore deserunt repudiandae nostrum repellat,
+                Aplikasi Website mengenai sistem pencarian dan pengumuman barang
+                hilang yang dapat membantu dan memudahkan mahasiswa Universitas
+                Padjadjaran dalam mencari ataupun mengumumkan kehilangan barang.
               </p>
             </div>
             <button>
@@ -129,15 +149,13 @@ export default function landingpage() {
                 className="input"
                 name="message"
                 style={{ height: "200px" }}
-                />
+              />
             </div>
             <input type="submit" value="submit"></input>
-           
           </form>
         </div>
       </section>
       <Footer />
-     
     </div>
   );
 }
