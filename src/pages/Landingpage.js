@@ -6,8 +6,7 @@ import kolektive from "../images/kolektive.png";
 import lostandfound from "../images/lostandfound.png";
 import cuciin from "../images/cuciin.png";
 import { FaTag } from "react-icons/fa";
-import image from "../images/personal.jpg";
-import pp from '../images/diza.jpg';
+import pp from "../images/diza.jpg";
 import react from "../images/react.png";
 import figma from "../images/figma.png";
 import css from "../images/css.png";
@@ -22,28 +21,34 @@ export default function landingpage() {
       <Navbar />
       <section id="home">
         <div className="heroLP">
-          <div className="boxHeading">
+          <div className="boxHeading boxHeading-1">
             <p>Frontend Developer</p>
             <span>Hello,</span>
             <h1>i'm Hadiza Cahya Firdaus.</h1>
           </div>
-          <div className="boxHeading">
-            <img src={pp}/>
-        </div>
+          <div className="boxHeading boxHeading-2">
+            <img src={pp} />
           </div>
+        </div>
       </section>
 
       <section id="about">
         <div className="about">
           <div className="layer">
-            <h1>ABOUT</h1>
+            {/* <h1>ABOUT</h1> */}
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-              iure dolore deserunt repudiandae nostrum repellat, quos tempore
-              assumenda, eos voluptatibus alias numquam, sit Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Pariatur iure dolore
-              deserunt repudiandae nostrum repellat, quos tempore assumenda, eos
-              voluptatibus alias numquam, sit
+              Hello, I'm Diza, currently studying at Padjadjaran University
+              majoring in Informatics Engineering. Starting from ignorance,
+              thanks to several courses in the Department of Informatics
+              Engineering which taught me a lot about Programming, Due to
+              several course projects last semester that required me to finally
+              create a Web. I decided I really wanted to learn more about Web
+              Programming.<br/><br/>
+              Therefore, because I only have a few semesters left,
+              I have finished studying at Padjadjaran University, I am currently
+              looking for a job (full time/internship) in a company that has
+              strong technological quality so that I can learn a lot from the
+              company.
             </p>
           </div>
         </div>
